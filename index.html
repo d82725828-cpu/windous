@@ -1,0 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB OS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="desktop">
+
+    <div class="desktop-title">
+        <h1>WEB OS</h1>
+        <p>Your digital world</p>
+    </div>
+
+    <div class="icons">
+
+        <div class="icon" onclick="openApp('files')">
+            <span>📁</span>
+            <p>Файлы</p>
+        </div>
+
+        <div class="icon" onclick="openApp('notes')">
+            <span>📝</span>
+            <p>Заметки</p>
+        </div>
+
+        <div class="icon" onclick="openApp('calculator')">
+            <span>🧮</span>
+            <p>Калькулятор</p>
+        </div>
+
+        <div class="icon" onclick="openApp('browser')">
+            <span>🌐</span>
+            <p>Браузер</p>
+        </div>
+
+        <div class="icon" onclick="openApp('music')">
+            <span>🎵</span>
+            <p>Музыка</p>
+        </div>
+
+        <div class="icon" onclick="openApp('settings')">
+            <span>⚙️</span>
+            <p>Настройки</p>
+        </div>
+
+    </div>
+
+    <div class="start-menu" id="startMenu">
+        <h3>🚀 WEB OS</h3>
+        <button onclick="openApp('files')">📁 Файлы</button>
+        <button onclick="openApp('notes')">📝 Заметки</button>
+        <button onclick="openApp('calculator')">🧮 Калькулятор</button>
+        <button onclick="openApp('browser')">🌐 Браузер</button>
+        <button onclick="openApp('music')">🎵 Музыка</button>
+        <button onclick="openApp('settings')">⚙️ Настройки</button>
+    </div>
+
+</div>
+
+<div id="taskbar">
+
+    <button class="start-button" onclick="toggleMenu()">
+        ⊞ Start
+    </button>
+
+    <div class="task-apps" id="taskApps"></div>
+
+    <div class="clock">
+        <div id="time">00:00</div>
+        <div id="date"></div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
